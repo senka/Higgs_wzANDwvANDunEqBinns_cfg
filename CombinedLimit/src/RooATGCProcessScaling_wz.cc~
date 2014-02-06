@@ -98,8 +98,6 @@ void RooATGCProcessScaling_wz::initializeNormalization(const RooAbsReal& dep,
   RooRealVar& b = const_cast<RooRealVar&>(rdep);
   
   bool bin_true=rdep.hasBinning("");
-  if (!bin_true)
-    cout <<"\t @@@@@@@@@@@ can't find biining! (RooATGCProcessScaling file)" << endl;
 
   int N_bins=rdep.getBinning("").numBins();
 

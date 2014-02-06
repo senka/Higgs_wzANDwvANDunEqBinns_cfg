@@ -97,8 +97,6 @@ void RooATGCProcessScaling_wz::initializeNormalization(const RooAbsReal& dep,
   const RooRealVar& rdep = dynamic_cast<const RooRealVar&>(dep);
   RooRealVar& b = const_cast<RooRealVar&>(rdep);
   
-  bool bin_true=rdep.hasBinning("");
-
   int N_bins=rdep.getBinning("").numBins();
 
   
